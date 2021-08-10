@@ -20,7 +20,7 @@ $ npm install pieoffice
 With `yarn`:
 
 ```
-yarn add pieoffice
+$ yarn add pieoffice
 ```
 
 ### Importing it
@@ -35,6 +35,30 @@ After importing, function `avestan()` will be available, so for example:
 
 ```
 console.log(avestan("mazdA")); // 𐬨𐬀𐬰𐬛𐬁
+```
+
+There is also a `allConverters` array built to work with `react-select` components, example from my implementation on [pieoffice-site](pieoffice.netlify.app):
+
+```
+import { allConverters } from "pieoffice";
+
+...
+
+const LangSelect = () => {
+
+    const handleChange = (e) => {
+            converter = e.converter;
+    }
+
+    return (
+        <Select
+            placeholder={"Select a script"}
+            onChange={handleChange}
+            options={allConverters}
+        />
+    );
+}
+
 ```
 
 ## Transliteration schemes
