@@ -1,11 +1,9 @@
 # pieoffice-js
 
 
-This is a simple web-browser app built for those who need or would like to type in the writings systems for ancient Indo-European languages.
-This is actually the third implementation of the same program originally written as a command line utility, the [`pieoffice`](https://pypi.org/project/pieoffice/), followed by a GUI version, the [`pieoffice-gui`](https://pypi.org/project/pieoffice-gui).
-They all work similarly with just a couple of features still not available in the web version due to my lack of java and react skills.
+This is a simple module built for those who need or would like to type in the writings systems for ancient Indo-European languages.
 
-The project is currently stored [here](https://pieoffice.netlify.app/).
+The project is currently working as an web app [pieoffice-site](https://pieoffice.netlify.app/).
 
 ## Usage
 
