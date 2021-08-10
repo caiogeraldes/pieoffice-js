@@ -1,7 +1,7 @@
 {
   "name": "pieoffice",
-  "type": "module",
   "version": "1.0.0",
+  "type": "module",
   "description": "Converters for Ancient Indo-European Scripts",
   "main": "index.js",
   "scripts": {
