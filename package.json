@@ -1,0 +1,25 @@
+{
+  "name": "pieoffice",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Converters for Ancient Indo-European Scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caiogeraldes/pieoffice-js.git"
+  },
+  "keywords": [
+    "writing-systems",
+    "linguistics",
+    "indoeuropean"
+  ],
+  "author": "Caio Geraldes",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/caiogeraldes/pieoffice-js/issues"
+  },
+  "homepage": "https://github.com/caiogeraldes/pieoffice-js#readme"
+}
