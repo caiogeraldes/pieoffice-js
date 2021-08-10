@@ -37,7 +37,7 @@ After importing, function `avestan()` will be available, so for example:
 console.log(avestan("mazdA")); // 𐬨𐬀𐬰𐬛𐬁
 ```
 
-There is also a `allConverters` array built to work with `react-select` components, example from my implementation on [pieoffice-site](pieoffice.netlify.app):
+There is also a `allConverters` array built to work with `react-select` components, example from my implementation on [pieoffice-site](https://pieoffice.netlify.app):
 
 ```
 import { allConverters } from "pieoffice";
@@ -63,20 +63,17 @@ const LangSelect = () => {
 
 ## Transliteration schemes
 
-I still must find a way to implement the transliteration schemes in the webapp itself, this will probably come in a later and "final" version of it.
-For now, I offer the following sections with the information needed, but I do think that the best thing possible is to check the files in `src/converters/`, since I might forget something.
-
-### Proto-Indo-European
+### Proto-Indo-European `pie(input)`
 
 Follows closely the Harvard-Kyoto transliteration scheme for Sanskrit. Resonants are encoded as uppercase, accents as slashes. w' = w; k', g' = ḱ, ǵ.
 
-### Polytonic Greek
+### Polytonic Greek `polygreek(input)`
 
 Transliteration scheme based on [BETACODE](http://stephanus.tlg.uci.edu/encoding/BCM.pdf), including all the major diacritics (breathings, acute, grave, perispomenon and diairesis), breve and macron, koppa (including the archaic) and some bits and pieces.
 The full support for betacode is still a work in progress.
 
 
-### Linear B
+### Linear B `linearb(input)`
 
 Glyphs with known syllabic values should be written in lower-case, syllabically
 and numbered if +2. Glyphs with known logographic values should be written in
@@ -90,7 +87,7 @@ This conversion scheme supports Aegean numbers and measurements.
 > po-ro EQUf 120 --> 𐀡𐀫 𐂄 𐄙𐄑
 
 
-### Cypriot Syllabary
+### Cypriot Syllabary `cypriot(input)`
 
 |             |               |               |               |             |
 |-------------|---------------|---------------|---------------|-------------|
@@ -108,7 +105,7 @@ This conversion scheme supports Aegean numbers and measurements.
 | ta      𐠭   |   te      𐠮   |   ti      𐠯   |    to      𐠰  |   tu      𐠱 |
 | ksa     𐠷   |   kse     𐠸   |               |               |             |
 
-### Armenian
+### Armenian `armenian(input)`
 
 |          |          |        |          |        |
 |----------|----------|--------|----------|--------|
@@ -124,7 +121,7 @@ This conversion scheme supports Aegean numbers and measurements.
 | ;          ՟ | ;'     ՛ | !	 ՜ | ``     « | ''	 » |
 
 
-### Vedic / Sanskrit
+### Vedic / Sanskrit `hk_deva(input)`,  `hk_iast(input)`, `hk_iso(input)`
 
 Use the [Harvard-Kyoto](https://en.wikipedia.org/wiki/Harvard-Kyoto) encoding for
 both outputs. Udatta (only for IAST), anudatta and svarita are assigned by `/`,
@@ -132,7 +129,7 @@ both outputs. Udatta (only for IAST), anudatta and svarita are assigned by `/`,
 text marked with udatta to devanagari with anudatta and svarita notation (**BETA**).
 
 
-### Avestan
+### Avestan `avestan(input)`, `avestanTrans(input)`
 
 |            |            |            |         |         |           |
 |------------|------------|----------- |---------|---------|-----------|
@@ -149,7 +146,7 @@ text marked with udatta to devanagari with anudatta and svarita notation (**BETA
 If you find it troublesome to type æ in your keyboard, try `Alt gr + a`, else try using ê.
 
 
-### Old Persian Cuneiform
+### Old Persian Cuneiform `oldpersian(input)`
 |       |       |       |       |       |       |       |
 |--------|--------|--------|--------|--------|--------|---------|
 | a    𐎠 | i    𐎡 | u    𐎢 | k    𐎣 | ku   𐎤 | x    𐎧 | xi   𐎧  |
@@ -162,7 +159,7 @@ If you find it troublesome to type æ in your keyboard, try `Alt gr + a`, else t
 | xshayathia   𐏋 | dahyaus1     𐏌 | dahyaus2    𐏌  | | | | |
 | baga         𐏎 | bumis        𐏏 |                | | | | |
 
-### Gothic
+### Gothic `gothic(input)`
 
 |         |         |         |         |         |         |         |
 |---------|---------|---------|---------|---------|---------|---------|
@@ -171,7 +168,7 @@ If you find it troublesome to type æ in your keyboard, try `Alt gr + a`, else t
 | j     𐌾 | u     𐌿 | p     𐍀 | q'    𐍁 | r     𐍂 | s     𐍃 | t     𐍄 |
 | w     𐍅 | f     𐍆 | x     𐍇 | hw    𐍈 | o     𐍉 | z'    𐍊 |         |
 
-### Hittite
+### Hittite `hittite(input)`
 
 I tried to keep the system as flexible as possible allowing diacritics (zá) and numerical typing (za2).
 So far it only covers the signs used in Van den Hout's textbook, with many issues concerning the fonts which employ workarounds to cover the Unicode chart's shortcomings.
@@ -201,7 +198,7 @@ Example:
    𒅖𒋫𒈠𒀸𒋓 𒉡 𒆳𒆳𒈩 𒇽𒉽 𒆪𒌋𒊒𒊑𒅀𒄴𒄭𒅖𒆠𒌋𒀭 𒁕𒀀[𒅕]
 ```
 
-### Hieroglyphic Luwian
+### Hieroglyphic Luwian `luwian(input)`
 
 Glyphs with known syllabic values should be written in lower-case, syllabically
 and with the proper diacritic or numbered if +4. Glyphs with known logographic
@@ -216,7 +213,7 @@ Example:
 > 𔐒 𔖙𔓢 𔐒 𔐕 𔕢𔗷𔗧𔖻𔑶 𔔆 𔐑 || X𔕸𔕠𔑣𔗔 𔐒 𔐕 𔐰𔓵𔑾𔖪 || 𔗬𔑢𔐞𔗷 𔒂𔖱𔑣 𔔆 𔐘 𔓹𔒒 || 𔔴
 
 
-### Lydian
+### Lydian `lydian(input)`
 
 |         |         |         |         |         |         |         |
 |---------|---------|---------|---------|---------|---------|---------|
@@ -226,7 +223,7 @@ Example:
 | ã     𐤵 | A     𐤵 | ẽ     𐤶 | E     𐤶 | L     𐤷 | N     𐤸 | c     𐤹 |
 | .      |         |         |         |         |         |         |
 
-### Lycian
+### Lycian `lycian(input)`
 
 |      |      |      |      |      |      |
 |------|------|------|------|------|------|
@@ -236,7 +233,7 @@ Example:
 | r  𐊕 | s  𐊖 | t  𐊗 | e  𐊁 | ã  𐊙 | ẽ  𐊚 |
 | M  𐊐 | N  𐊑 | T  𐊘 | q  𐊌 | B  𐊃 | x  𐊜 |
 
-### Carian
+### Carian `carian(input)`
 
 |          |          |          |          |          |          |
 |----------|----------|----------|----------|----------|----------|
@@ -250,7 +247,7 @@ Example:
 | y3     𐋈 | r2     𐋉 | mb     𐋊 | mb2    𐋋 | mb3    𐋌 | mb4    𐋍 |
 | e2     𐋏 |          |          |          |          |          |
 
-### Ogham
+### Ogham `ogham(input)`
 
 |               |               |               |                |
 |---------------|---------------|---------------|----------------|
@@ -264,7 +261,7 @@ Example:
 | ,peith,     ᚚ | >           ᚛ | <           ᚜ |                |
 
 
-### Oscan
+### Oscan `oscan(input)`
 
 |     |     |       |     |     |     |     |
 |-----|-----|-------|-----|-----|-----|-----|
@@ -272,7 +269,7 @@ Example:
 | h 𐌇 | i 𐌉 | l   𐌋 | m 𐌌 | n 𐌍 | p 𐌐 | ś 𐌑 |
 | r 𐌓 | s 𐌔 | t   𐌕 | u 𐌖 | f 𐌚 | ú 𐌞 | í 𐌝 |
 
-### Glagolitic
+### Glagolitic `glagolitic(input)`
 
 |       |       |       |       |       |       |
 |-------|-------|-------|-------|-------|-------|
@@ -287,6 +284,6 @@ Example:
 
 ## Acknowledgments
 
-- Obrigado, Alex por indicar alguns erros crassos que tinham passado despercebidos em Grego e Avesta.
-- Obrigado, Thiago, por notar que o antigo IAST do védico era um misto de IAST com ISO.
+- Obrigado Alex por indicar alguns erros crassos que tinham passado despercebidos em Grego e Avesta.
+- Obrigado Thiago, por notar que o antigo IAST do védico era um misto de IAST com ISO.
 
