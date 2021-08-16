@@ -12,8 +12,10 @@ const armenian = (input) => {
     input = input.replace(/E/g, "Ե")
 
     input = input.replace(/zh/g, "ժ")
-    input = input.replace(/ch/g, "չ")
     input = input.replace(/ch\./g, "ճ")
+    input = input.replace(/c'h/g, "ճ")
+    input = input.replace(/C'h/g, "ճ")
+    input = input.replace(/ch/g, "չ")
     input = input.replace(/sh/g, "շ")
     input = input.replace(/jh/g, "ջ")
     input = input.replace(/ZH/g, "Ժ")
