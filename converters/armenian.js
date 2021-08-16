@@ -1,7 +1,4 @@
 const armenian = (input) => {
-    input = input.replace(/ye/g, "ե")
-    input = input.replace(/YE/g, "Ե")
-    input = input.replace(/Ye/g, "Ե")
     input = input.replace(/ee/g, "է")
     input = input.replace(/EE/g, "Է")
     input = input.replace(/ev/g, "և")
