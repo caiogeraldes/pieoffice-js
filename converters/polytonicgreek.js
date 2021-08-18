@@ -28,7 +28,7 @@ const polygreek = (input) => {
     input = input.replace(/U|\*u/g,     "Υ");
     input = input.replace(/W|\*w/g,     "Ω");
 
-    input = input.replace(/s /g,    "ς ");
+    input = input.replace(/s([\ ,.;])/g,    "ς$1");
     input = input.replace(/s/g,     "σ");
     input = input.replace(/b/g,     "β");
     input = input.replace(/g/g,     "γ");
