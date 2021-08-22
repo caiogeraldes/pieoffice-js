@@ -99,8 +99,7 @@ const armenian = (input) => {
     input = input.replace(/``/g, "«")
     input = input.replace(/''/g, "»")
 
-return input;
+    return input;
 }
 
 export default armenian;
-

@@ -1,5 +1,5 @@
 const oldpersian = (input) => {
-    input = input.replace(/-/g,"")
+    input = input.replace(/-/g, "")
     input = input.replace(/ahuramazda1/g, "𐏈")
     input = input.replace(/ahuramazda2/g, "𐏉")
     input = input.replace(/ahuramazda3/g, "𐏊")

@@ -1,5 +1,5 @@
 const cypriot = (input) => {
-    input = input.replace(/-/g,"")
+    input = input.replace(/-/g, "")
 
     input = input.replace(/wa/g, "𐠲")
     input = input.replace(/we/g, "𐠳")
@@ -87,7 +87,7 @@ const cypriot = (input) => {
     input = input.replace(/7(\d\d\d)/g, "𐄨$1");
     input = input.replace(/8(\d\d\d)/g, "𐄩$1");
     input = input.replace(/9(\d\d\d)/g, "𐄪$1");
-    
+
     input = input.replace(/1(\d\d)/g, "𐄙$1");
     input = input.replace(/2(\d\d)/g, "𐄚$1");
     input = input.replace(/3(\d\d)/g, "𐄛$1");

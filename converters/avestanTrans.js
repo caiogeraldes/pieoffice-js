@@ -1,4 +1,3 @@
-
 const avestanTrans = (input) => {
     input = input.replace(/A/g, "ā")
     input = input.replace(/aa/g, "ā")
@@ -42,7 +41,7 @@ const avestanTrans = (input) => {
     input = input.replace(/sh/g, "š")
     input = input.replace(/zh/g, "ž")
     input = input.replace(/S/g, "ṣ̌")
-    
+
     return input;
 }
 

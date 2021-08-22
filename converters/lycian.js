@@ -28,7 +28,7 @@ const lycian = (input) => {
     input = input.replace(/q/g, "𐊌")
     input = input.replace(/B/g, "𐊃")
     input = input.replace(/x/g, "𐊜")
-    input = input.replace(/th/g,"𐊉")
+    input = input.replace(/th/g, "𐊉")
 
     return input;
 }

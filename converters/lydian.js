@@ -22,7 +22,7 @@ const lydian = (input) => {
     input = input.replace(/f/g, "𐤱")
     input = input.replace(/q/g, "𐤲")
     input = input.replace(/s/g, "𐤳")
-    input = input.replace(/sh/g,"𐤳")
+    input = input.replace(/sh/g, "𐤳")
     input = input.replace(/T/g, "𐤴")
     input = input.replace(/ã/g, "𐤵")
     input = input.replace(/A/g, "𐤵")

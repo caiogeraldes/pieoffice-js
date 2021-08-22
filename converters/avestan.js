@@ -66,4 +66,3 @@ const avestan = (input) => {
 
 
 export default avestan;
-

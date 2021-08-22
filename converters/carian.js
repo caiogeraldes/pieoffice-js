@@ -49,8 +49,7 @@ const carian = (input) => {
     input = input.replace(/mb2/g, "𐋋");
     input = input.replace(/mb3/g, "𐋌");
     input = input.replace(/mb4/g, "𐋍");
-    input = input.replace(/mb/g, "𐋊");
-;
+    input = input.replace(/mb/g, "𐋊");;
     return input;
 }
 
