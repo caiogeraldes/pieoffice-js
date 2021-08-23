@@ -100,7 +100,7 @@ This conversion scheme supports Aegean numbers and measurements.
 | ta      𐠭 | te      𐠮 | ti      𐠯 | to      𐠰 | tu      𐠱 |
 | ksa     𐠷 | kse     𐠸 |            |            |            |
 
-### Armenian `armenian(input)`
+### Armenian `armenian(input)`, `armenianTranslitIso(input)`, `armenianTranslitClassic`
 
 |               |          |            |          |       |
 |---------------|----------|------------|----------|-------|
@@ -115,6 +115,8 @@ This conversion scheme supports Aegean numbers and measurements.
 | u          ու | ew     և | ?  ՞       | .      ։ | .'  ՝ |
 | ;          ՟  | ;'     ՛ | !  ՜       | ``     « | ''  » |
 
+For the particulars of the transliteration schemes, see the article on [Wikipedia](https://en.wikipedia.org/wiki/Armenian_alphabet#Transliteration).
+
 ### Vedic / Sanskrit `hk_deva(input)`,  `hk_iast(input)`, `hk_iso(input)`
 
 Use the [Harvard-Kyoto](https://en.wikipedia.org/wiki/Harvard-Kyoto) encoding for
@@ -122,7 +124,7 @@ both outputs. Udatta (only for IAST), anudatta and svarita are assigned by `/`,
 `=`, and ```\``` after the vowel (or vowel + M), but the script also converts
 text marked with udatta to devanagari with anudatta and svarita notation (**BETA**).
 
-### Avestan `avestan(input)`, `avestanTrans(input)`
+### Avestan `avestan(input)`, `avestanTranslit(input)`
 
 |             |             |            |          |          |             |
 |-------------|-------------|------------|----------|----------|-------------|
