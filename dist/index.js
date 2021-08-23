@@ -42,86 +42,86 @@ exports.glagolitic = glagolitic_js_1.default;
 const allConverters = [
     {
         value: "pie",
-        label: 'Proto-Indo-European',
+        label: "Proto-Indo-European",
         converter: pie_js_1.default
     },
     {
         value: "polygreek",
-        label: 'Polytonic Greek',
+        label: "Polytonic Greek",
         converter: polytonicgreek_js_1.default
     },
     {
         value: "linearb",
-        label: 'Linear B',
+        label: "Linear B",
         converter: linearb_js_1.default
     },
     {
         value: "cypriot",
-        label: 'Cypriot Syllabary',
+        label: "Cypriot Syllabary",
         converter: cypriot_js_1.default
     }, {
         value: "armenian",
-        label: 'Armenian',
+        label: "Armenian",
         converter: armenian_js_1.default
     }, {
         value: "hk_deva",
-        label: 'Vedic / Sanskrit (Devanāgarī)',
+        label: "Vedic / Sanskrit (Devanāgarī)",
         converter: vedic_js_1.hk_deva
     }, {
         value: "hk_iast",
-        label: 'Vedic / Sanskrit (IAST)',
+        label: "Vedic / Sanskrit (IAST)",
         converter: vedic_js_1.hk_iast
     }, {
         value: "hk_iso",
-        label: 'Vedic / Sanskrit (ISO)',
+        label: "Vedic / Sanskrit (ISO)",
         converter: vedic_js_1.hk_iso
     }, {
         value: "avestascript",
-        label: 'Avestan (Script)',
+        label: "Avestan (Script)",
         converter: avestan_js_1.default
     }, {
         value: "avestaTrans",
-        label: 'Avestan (Translit)',
+        label: "Avestan (Translit)",
         converter: avestanTrans_js_1.default
     }, {
         value: "oldpersian",
-        label: 'Old Persian Cuneiform',
+        label: "Old Persian Cuneiform",
         converter: oldpersian_js_1.default
     }, {
         value: "gothic",
-        label: 'Gothic',
+        label: "Gothic",
         converter: gothic_js_1.default
     }, {
         value: "hittite",
-        label: 'Hittite (beta)',
+        label: "Hittite (beta)",
         converter: hittite_js_1.default
     }, {
         value: "luwian",
-        label: 'Hieroglyphic Luwian',
+        label: "Hieroglyphic Luwian",
         converter: luwian_js_1.default
     }, {
         value: "lydian",
-        label: 'Lydian',
+        label: "Lydian",
         converter: lydian_js_1.default
     }, {
         value: "lycian",
-        label: 'Lycian',
+        label: "Lycian",
         converter: lycian_js_1.default
     }, {
         value: "carian",
-        label: 'Carian',
+        label: "Carian",
         converter: carian_js_1.default
     }, {
         value: "ogham",
-        label: 'Ogham',
+        label: "Ogham",
         converter: ogham_js_1.default
     }, {
         value: "oscan",
-        label: 'Oscan',
+        label: "Oscan",
         converter: oscan_js_1.default
     }, {
         value: "glagolitic",
-        label: 'Glagolitic',
+        label: "Glagolitic",
         converter: glagolitic_js_1.default
     }
 ];

@@ -104,7 +104,7 @@ function hk_deva(input) {
     input = input.replace(/h/g, "ह्");
     input = input.replace(/M/g, "\u0902");
     input = input.replace(/H/g, "\u0903");
-    input = input.replace(/\\/g, "\u0953");
+    input = input.replace(/\\/g, "\u0951");
     input = input.replace(/=/g, "\u0952");
     input = input.replace(/&/g, "\u0901");
     input = input.replace(/'/g, "ऽ");
@@ -181,9 +181,9 @@ function hk_iso(input) {
 }
 exports.hk_iso = hk_iso;
 function hkUdToHkAnu(hkUdStr) {
-    var hkSyllab = hkToSyllables(hkUdStr);
+    const hkSyllab = hkToSyllables(hkUdStr);
     const hkAcc = hkAccentuation(hkSyllab);
-    let hkSyllabArray = hkSyllab.split(".");
+    const hkSyllabArray = hkSyllab.split(".");
     const hkAnuAcc = udToAnu(hkAcc).split("");
     const hkAnuStr = hkSyllabArray.map(function (value, index) {
         if (hkAnuAcc[index] === "A") {
@@ -209,7 +209,7 @@ function udToAnu(udStr) {
     //
     // Example:
     // udToAnu('BBUBBUUB') => // AADSADDS
-    var anuStr = udStr;
+    let anuStr = udStr;
     anuStr = anuStr.replace(/BU/g, "AU");
     anuStr = anuStr.replace(/UB/g, "US");
     anuStr = anuStr.replace(/U/g, "D");
@@ -222,7 +222,7 @@ function udToAnu(udStr) {
     return anuStr;
 }
 function hkToSyllables(hkStr) {
-    var hkSyllab = hkStr;
+    let hkSyllab = hkStr;
     hkSyllab = hkSyllab.replace(/([aeiouAEIOUR])/g, "$1.");
     hkSyllab = hkSyllab.replace(/a\.([ui])\./, "a$1.");
     hkSyllab = hkSyllab.replace(/\.\//g, "/.");
@@ -232,7 +232,7 @@ function hkToSyllables(hkStr) {
     return hkSyllab;
 }
 function hkAccentuation(hkSyllab) {
-    var hkAcc = hkSyllab.split(".");
+    let hkAcc = hkSyllab.split(".");
     hkAcc = hkAcc.map(val => val.includes("/") ? "U" : "B");
     return hkAcc.join("");
 }
