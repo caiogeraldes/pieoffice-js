@@ -135,7 +135,7 @@ const armenianTranslitIso = (input: string): string => {
     input = input.replace(/C/g, "Ç")
     input = input.replace(/J/g, "Dz")
     input = input.replace(/Ow/g, "U")
-    input = input.replace(/c/g, "Ç")
+    input = input.replace(/c/g, "ç")
     input = input.replace(/j/g, "dz")
     input = input.replace(/ow/g, "u")
 
