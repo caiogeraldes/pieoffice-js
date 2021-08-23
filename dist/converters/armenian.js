@@ -31,12 +31,13 @@ const armenian = (input) => {
     input = input.replace(/K'/g, "Ք");
     input = input.replace(/O'/g, "Օ");
     input = input.replace(/T'/g, "Թ");
-    input = input.replace(/g\./g, "ġ");
-    input = input.replace(/l\./g, "ġ");
+    input = input.replace(/g\./g, "ղ");
+    input = input.replace(/l\./g, "ղ");
     input = input.replace(/r\./g, "ռ");
     input = input.replace(/V\./g, "Վ");
     input = input.replace(/R\./g, "Ռ");
     input = input.replace(/G\./g, "Ղ");
+    input = input.replace(/L\./g, "Ղ");
     input = input.replace(/I/g, "Ի");
     input = input.replace(/L/g, "Լ");
     input = input.replace(/X/g, "Խ");
