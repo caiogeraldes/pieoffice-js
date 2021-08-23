@@ -32,8 +32,8 @@ const armenian = (input: string): string => {
     input = input.replace(/O'/g, "Օ")
     input = input.replace(/T'/g, "Թ")
 
-    input = input.replace(/g\./g, "ղ")
-    input = input.replace(/l\./g, "ղ")
+    input = input.replace(/g\./g, "ġ")
+    input = input.replace(/l\./g, "ġ")
     input = input.replace(/r\./g, "ռ")
     input = input.replace(/V\./g, "Վ")
     input = input.replace(/R\./g, "Ռ")
@@ -102,4 +102,60 @@ const armenian = (input: string): string => {
     return input;
 }
 
-export default armenian;
+const armenianTranslitIso = (input: string): string => {
+    input = input.replace(/ee/g, "ē")
+    input = input.replace(/EE/g, "Ē")
+    input = input.replace(/e'/g, "ë")
+    input = input.replace(/E'/g, "Ë")
+
+    input = input.replace(/zh/g, "ž")
+    input = input.replace(/ch\./g, "č̣")
+    input = input.replace(/c'h/g, "č̣")
+    input = input.replace(/C'h/g, "Č̣")
+    input = input.replace(/ch/g, "č")
+    input = input.replace(/sh/g, "š")
+    input = input.replace(/jh/g, "ǰ")
+    input = input.replace(/ZH/g, "Ž")
+    input = input.replace(/CH\./g, "Č̣")
+    input = input.replace(/SH/g, "Š")
+    input = input.replace(/CH/g, "Č")
+    input = input.replace(/JH/g, "ǰ")
+
+    input = input.replace(/o'/g, "ò")
+    input = input.replace(/O'/g, "Ò")
+
+    input = input.replace(/g\./g, "ġ")
+    input = input.replace(/l\./g, "ġ")
+    input = input.replace(/r\./g, "ṙ")
+    input = input.replace(/R\./g, "Ṙ")
+    input = input.replace(/G\./g, "Ġ")
+    input = input.replace(/L\./g, "Ġ")
+
+
+    input = input.replace(/C/g, "Ç")
+    input = input.replace(/J/g, "Dz")
+    input = input.replace(/Ow/g, "U")
+    input = input.replace(/c/g, "Ç")
+    input = input.replace(/j/g, "dz")
+    input = input.replace(/ow/g, "u")
+
+    return input;
+}
+
+
+const armenianTranslitClassical = (input: string): string => {
+    input = armenianTranslitIso(input);
+    input = input.replace(/ë/g, "ə")
+    input = input.replace(/Ë/g, "Ə")
+    input = input.replace(/ç/g, "c")
+    input = input.replace(/ġ/g, "ł")
+    input = input.replace(/č/g, "č'")
+    input = input.replace(/č̣/g, "č")
+    input = input.replace(/ò/g, "ō")
+
+    input = input.replace(/'/g, "ʿ")
+
+    return input;
+}
+
+export { armenian, armenianTranslitIso, armenianTranslitClassical };
