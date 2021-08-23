@@ -102,7 +102,7 @@ function hk_deva(input: string): string {
 
     input = input.replace(/M/g, "\u0902");
     input = input.replace(/H/g, "\u0903");
-    input = input.replace(/\\/g, "\u0953");
+    input = input.replace(/\\/g, "\u0951");
     input = input.replace(/=/g, "\u0952");
     input = input.replace(/&/g, "\u0901");
     input = input.replace(/'/g, "ऽ");
