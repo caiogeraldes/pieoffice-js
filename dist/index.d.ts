@@ -2,9 +2,8 @@ import pie from "./converters/pie.js";
 import polygreek from "./converters/polytonicgreek.js";
 import linearb from "./converters/linearb.js";
 import cypriot from "./converters/cypriot.js";
-import armenian from "./converters/armenian.js";
-import avestan from "./converters/avestan.js";
-import avestanTrans from "./converters/avestanTrans.js";
+import { armenian, armenianTranslitIso, armenianTranslitClassical } from "./converters/armenian.js";
+import { avestan, avestanTranslit } from "./converters/avestan.js";
 import oldpersian from "./converters/oldpersian.js";
 import gothic from "./converters/gothic.js";
 import hittite from "./converters/hittite.js";
@@ -21,4 +20,4 @@ declare const allConverters: {
     label: string;
     converter: (input: string) => string;
 }[];
-export { pie, polygreek, linearb, cypriot, armenian, avestan, avestanTrans, oldpersian, gothic, hittite, luwian, lycian, lydian, carian, ogham, oscan, hk_deva, hk_iast, hk_iso, glagolitic, allConverters };
+export { pie, polygreek, linearb, cypriot, armenian, armenianTranslitIso, armenianTranslitClassical, avestan, avestanTranslit, oldpersian, gothic, hittite, luwian, lycian, lydian, carian, ogham, oscan, hk_deva, hk_iast, hk_iso, glagolitic, allConverters };

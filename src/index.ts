@@ -2,9 +2,8 @@ import pie from "./converters/pie.js";
 import polygreek from "./converters/polytonicgreek.js";
 import linearb from "./converters/linearb.js";
 import cypriot from "./converters/cypriot.js";
-import armenian from "./converters/armenian.js";
-import avestan from "./converters/avestan.js";
-import avestanTrans from "./converters/avestanTrans.js";
+import { armenian, armenianTranslitIso, armenianTranslitClassical } from "./converters/armenian.js";
+import { avestan, avestanTranslit } from "./converters/avestan.js";
 import oldpersian from "./converters/oldpersian.js";
 import gothic from "./converters/gothic.js";
 import hittite from "./converters/hittite.js";
@@ -42,6 +41,14 @@ const allConverters = [
         label: "Armenian",
         converter: armenian
     }, {
+        value: "armenian_iso",
+        label: "Armenian Transliterated (ISO 9985)",
+        converter: armenianTranslitIso
+    }, {
+        value: "armenian_classical",
+        label: "Armenian Transliterated (Classical)",
+        converter: armenianTranslitClassical
+    }, {
         value: "hk_deva",
         label: "Vedic / Sanskrit (Devanāgarī)",
         converter: hk_deva
@@ -60,7 +67,7 @@ const allConverters = [
     }, {
         value: "avestaTrans",
         label: "Avestan (Translit)",
-        converter: avestanTrans
+        converter: avestanTranslit
     }, {
         value: "oldpersian",
         label: "Old Persian Cuneiform",
@@ -110,8 +117,10 @@ export {
     linearb,
     cypriot,
     armenian,
+    armenianTranslitIso,
+    armenianTranslitClassical,
     avestan,
-    avestanTrans,
+    avestanTranslit,
     oldpersian,
     gothic,
     hittite,

@@ -1,2 +1,4 @@
 declare const armenian: (input: string) => string;
-export default armenian;
+declare const armenianTranslitIso: (input: string) => string;
+declare const armenianTranslitClassical: (input: string) => string;
+export { armenian, armenianTranslitIso, armenianTranslitClassical };

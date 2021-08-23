@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.allConverters = exports.glagolitic = exports.hk_iso = exports.hk_iast = exports.hk_deva = exports.oscan = exports.ogham = exports.carian = exports.lydian = exports.lycian = exports.luwian = exports.hittite = exports.gothic = exports.oldpersian = exports.avestanTrans = exports.avestan = exports.armenian = exports.cypriot = exports.linearb = exports.polygreek = exports.pie = void 0;
+exports.allConverters = exports.glagolitic = exports.hk_iso = exports.hk_iast = exports.hk_deva = exports.oscan = exports.ogham = exports.carian = exports.lydian = exports.lycian = exports.luwian = exports.hittite = exports.gothic = exports.oldpersian = exports.avestanTranslit = exports.avestan = exports.armenianTranslitClassical = exports.armenianTranslitIso = exports.armenian = exports.cypriot = exports.linearb = exports.polygreek = exports.pie = void 0;
 const pie_js_1 = require("./converters/pie.js");
 exports.pie = pie_js_1.default;
 const polytonicgreek_js_1 = require("./converters/polytonicgreek.js");
@@ -10,11 +10,12 @@ exports.linearb = linearb_js_1.default;
 const cypriot_js_1 = require("./converters/cypriot.js");
 exports.cypriot = cypriot_js_1.default;
 const armenian_js_1 = require("./converters/armenian.js");
-exports.armenian = armenian_js_1.default;
+Object.defineProperty(exports, "armenian", { enumerable: true, get: function () { return armenian_js_1.armenian; } });
+Object.defineProperty(exports, "armenianTranslitIso", { enumerable: true, get: function () { return armenian_js_1.armenianTranslitIso; } });
+Object.defineProperty(exports, "armenianTranslitClassical", { enumerable: true, get: function () { return armenian_js_1.armenianTranslitClassical; } });
 const avestan_js_1 = require("./converters/avestan.js");
-exports.avestan = avestan_js_1.default;
-const avestanTrans_js_1 = require("./converters/avestanTrans.js");
-exports.avestanTrans = avestanTrans_js_1.default;
+Object.defineProperty(exports, "avestan", { enumerable: true, get: function () { return avestan_js_1.avestan; } });
+Object.defineProperty(exports, "avestanTranslit", { enumerable: true, get: function () { return avestan_js_1.avestanTranslit; } });
 const oldpersian_js_1 = require("./converters/oldpersian.js");
 exports.oldpersian = oldpersian_js_1.default;
 const gothic_js_1 = require("./converters/gothic.js");
@@ -62,7 +63,15 @@ const allConverters = [
     }, {
         value: "armenian",
         label: "Armenian",
-        converter: armenian_js_1.default
+        converter: armenian_js_1.armenian
+    }, {
+        value: "armenian_iso",
+        label: "Armenian Transliterated (ISO 9985)",
+        converter: armenian_js_1.armenianTranslitIso
+    }, {
+        value: "armenian_classical",
+        label: "Armenian Transliterated (Classical)",
+        converter: armenian_js_1.armenianTranslitClassical
     }, {
         value: "hk_deva",
         label: "Vedic / Sanskrit (Devanāgarī)",
@@ -78,11 +87,11 @@ const allConverters = [
     }, {
         value: "avestascript",
         label: "Avestan (Script)",
-        converter: avestan_js_1.default
+        converter: avestan_js_1.avestan
     }, {
         value: "avestaTrans",
         label: "Avestan (Translit)",
-        converter: avestanTrans_js_1.default
+        converter: avestan_js_1.avestanTranslit
     }, {
         value: "oldpersian",
         label: "Old Persian Cuneiform",

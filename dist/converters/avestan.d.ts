@@ -1,2 +1,3 @@
 declare const avestan: (input: string) => string;
-export default avestan;
+declare const avestanTranslit: (input: string) => string;
+export { avestan, avestanTranslit };
