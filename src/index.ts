@@ -2,7 +2,7 @@ import pie from "./converters/pie.js";
 import polygreek from "./converters/polytonicgreek.js";
 import linearb from "./converters/linearb.js";
 import cypriot from "./converters/cypriot.js";
-import { armenian, armenianTranslitIso, armenianTranslitClassical } from "./converters/armenian.js";
+import { armenian, armenianTranslitIso, armenianTranslitClassical, fromArmenianToISO, fromArmenianToClassical} from "./converters/armenian.js";
 import { avestan, avestanTranslit } from "./converters/avestan.js";
 import oldpersian from "./converters/oldpersian.js";
 import gothic from "./converters/gothic.js";
@@ -119,6 +119,8 @@ export {
     armenian,
     armenianTranslitIso,
     armenianTranslitClassical,
+    fromArmenianToISO,
+    fromArmenianToClassical,
     avestan,
     avestanTranslit,
     oldpersian,

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.allConverters = exports.glagolitic = exports.hk_iso = exports.hk_iast = exports.hk_deva = exports.oscan = exports.ogham = exports.carian = exports.lydian = exports.lycian = exports.luwian = exports.hittite = exports.gothic = exports.oldpersian = exports.avestanTranslit = exports.avestan = exports.armenianTranslitClassical = exports.armenianTranslitIso = exports.armenian = exports.cypriot = exports.linearb = exports.polygreek = exports.pie = void 0;
+exports.allConverters = exports.glagolitic = exports.hk_iso = exports.hk_iast = exports.hk_deva = exports.oscan = exports.ogham = exports.carian = exports.lydian = exports.lycian = exports.luwian = exports.hittite = exports.gothic = exports.oldpersian = exports.avestanTranslit = exports.avestan = exports.fromArmenianToClassical = exports.fromArmenianToISO = exports.armenianTranslitClassical = exports.armenianTranslitIso = exports.armenian = exports.cypriot = exports.linearb = exports.polygreek = exports.pie = void 0;
 const pie_js_1 = require("./converters/pie.js");
 exports.pie = pie_js_1.default;
 const polytonicgreek_js_1 = require("./converters/polytonicgreek.js");
@@ -13,6 +13,8 @@ const armenian_js_1 = require("./converters/armenian.js");
 Object.defineProperty(exports, "armenian", { enumerable: true, get: function () { return armenian_js_1.armenian; } });
 Object.defineProperty(exports, "armenianTranslitIso", { enumerable: true, get: function () { return armenian_js_1.armenianTranslitIso; } });
 Object.defineProperty(exports, "armenianTranslitClassical", { enumerable: true, get: function () { return armenian_js_1.armenianTranslitClassical; } });
+Object.defineProperty(exports, "fromArmenianToISO", { enumerable: true, get: function () { return armenian_js_1.fromArmenianToISO; } });
+Object.defineProperty(exports, "fromArmenianToClassical", { enumerable: true, get: function () { return armenian_js_1.fromArmenianToClassical; } });
 const avestan_js_1 = require("./converters/avestan.js");
 Object.defineProperty(exports, "avestan", { enumerable: true, get: function () { return avestan_js_1.avestan; } });
 Object.defineProperty(exports, "avestanTranslit", { enumerable: true, get: function () { return avestan_js_1.avestanTranslit; } });
