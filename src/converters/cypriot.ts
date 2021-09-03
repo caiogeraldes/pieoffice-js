@@ -5,7 +5,7 @@ const cypriot = (input: string): string => {
     input = input.replace(/we/g, "𐠳")
     input = input.replace(/wi/g, "𐠴")
     input = input.replace(/wo/g, "𐠵")
-    input = input.replace(/za/g, "𐠼")
+    input = input.replace(/[zg]a/g, "𐠼")
     input = input.replace(/zo/g, "𐠿")
     input = input.replace(/ja/g, "𐠅")
     input = input.replace(/jo/g, "𐠈")
