@@ -7,7 +7,7 @@ import { avestan, avestanTranslit } from "./converters/avestan.js";
 import oldpersian from "./converters/oldpersian.js";
 import gothic from "./converters/gothic.js";
 import hittite from "./converters/hittite.js";
-import luwian from "./converters/luwian.js";
+// import luwian from "./converters/luwian.js";
 import lycian from "./converters/lycian.js";
 import lydian from "./converters/lydian.js";
 import carian from "./converters/carian.js";
@@ -80,10 +80,10 @@ const allConverters = [
         value: "hittite",
         label: "Hittite (beta)",
         converter: hittite
-    }, {
-        value: "luwian",
-        label: "Hieroglyphic Luwian",
-        converter: luwian
+    // }, {
+        // value: "luwian",
+        // label: "Hieroglyphic Luwian",
+        // converter: luwian
     }, {
         value: "lydian",
         label: "Lydian",
