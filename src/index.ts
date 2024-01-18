@@ -126,7 +126,7 @@ export {
     oldpersian,
     gothic,
     hittite,
-    luwian,
+    // luwian,
     lycian,
     lydian,
     carian,
