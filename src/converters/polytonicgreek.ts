@@ -93,7 +93,7 @@ const polygreek = (input: string): string => {
     input = input.replace(/:/g, "\u00b7");
     input = input.replace(/'/g, "\u02bc");
 
-    return input;
+    return input.normalize('NFC');
 }
 
 export default polygreek
